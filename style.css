@@ -425,3 +425,59 @@ Her tilpasses layoutet, så det ligner desktop-versionen fra Figma.
         padding: 28px 0 18px 0;
     }
 }
+
+@media (min-width: 900px) {
+  .forside-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    max-width: 100vw;
+    overflow: hidden;
+  }
+  .forside-card {
+    flex: 1 1 0;
+    width: 33.333vw !important;
+    max-width: none !important;
+    min-width: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    background: var(--color-creme) !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .forside-card > div {
+    width: 100%;
+    position: relative;
+    height: 40vw;
+    min-height: 340px;
+    max-height: 520px;
+    overflow: hidden;
+  }
+  .forside-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+  }
+  .forside-titlebox {
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 70%;
+    min-width: 120px;
+    font-size: 1.2rem;
+    position: absolute !important;
+    text-align: center;
+    z-index: 2;
+  }
+}
