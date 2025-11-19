@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sæsonkalender og opskrifter</title>
+    <!--
+    'viewport' gør siden responsiv, så den tilpasser sig mobilskærme.
+    -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header med logo og navigation -->
+    <header class="header">
+        <!-- Logo øverst til venstre -->
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <!-- Navigation med links til de andre sider -->
+        <nav class="nav">
+            <a href="index.html">Forside</a>
+            <a href="seasonkalenderogopskrifter.html" class="active">Sæsonkalender og opskrifter</a>
+            <a href="omos.html">Om os</a>
+        </nav>
+    </header>
+
+    <!-- Billede med ramme øverst på siden -->
+    <section class="top-image-section">
+        <!--
+        Her vises månedens sæsonbillede. Billedet får en ramme med CSS.
+        -->
+        <img src="img/sæsonkalender.jpg" alt="Sæsonkalender November" class="season-image">
+    </section>
+
+    <!-- Videoslider/karusel med pile til at bladre mellem videoer -->
+    <section class="video-slider-section">
+        <!--
+        Slider/karusel med ugedagsbilleder og play-ikon.
+        Når play trykkes, vises videoen for den pågældende dag.
+        -->
+        <div class="video-slider">
+            <!-- Venstre pil -->
+            <button class="slider-arrow left-arrow">&#8592;</button>
+            <!-- Slides for hver ugedag -->
+            <div class="video-slides">
+                <!-- Mandag -->
+                <div class="video-slide" data-video="https://www.youtube.com/embed/feHf-khAmTM">
+                    <h2 class="slide-title">Mandag</h2>
+                    <div class="slide-media-wrapper">
+                        <div class="slide-image-wrapper">
+                            <img src="img/mandag.png" alt="Mandag" class="slide-image">
+                            <button class="play-btn" aria-label="Afspil video for Mandag">
+                                <svg width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#fff" opacity="0.7"/><polygon points="20,16 36,24 20,32" fill="#573120"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="recipe-btn">se opskrift</button>
+                </div>
+                <!-- Tirsdag -->
+                <div class="video-slide" data-video="https://www.youtube.com/embed/feHf-khAmTM">
+                    <h2 class="slide-title">Tirsdag</h2>
+                    <div class="slide-media-wrapper">
+                        <div class="slide-image-wrapper">
+                            <img src="img/tirsdag.jpeg" alt="Tirsdag" class="slide-image">
+                            <button class="play-btn" aria-label="Afspil video for Tirsdag">
+                                <svg width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#fff" opacity="0.7"/><polygon points="20,16 36,24 20,32" fill="#573120"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="recipe-btn">se opskrift</button>
+                </div>
+                <!-- Onsdag -->
+                <div class="video-slide" data-video="https://www.youtube.com/embed/feHf-khAmTM">
+                    <h2 class="slide-title">Onsdag</h2>
+                    <div class="slide-media-wrapper">
+                        <div class="slide-image-wrapper">
+                            <img src="img/onsdag.jpeg" alt="Onsdag" class="slide-image">
+                            <button class="play-btn" aria-label="Afspil video for Onsdag">
+                                <svg width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#fff" opacity="0.7"/><polygon points="20,16 36,24 20,32" fill="#573120"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="recipe-btn">se opskrift</button>
+                </div>
+                <!-- Torsdag -->
+                <div class="video-slide" data-video="https://www.youtube.com/embed/feHf-khAmTM">
+                    <h2 class="slide-title">Torsdag</h2>
+                    <div class="slide-media-wrapper">
+                        <div class="slide-image-wrapper">
+                            <img src="img/torsdag.jpeg" alt="Torsdag" class="slide-image">
+                            <button class="play-btn" aria-label="Afspil video for Torsdag">
+                                <svg width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#fff" opacity="0.7"/><polygon points="20,16 36,24 20,32" fill="#573120"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="recipe-btn">se opskrift</button>
+                </div>
+                <!-- Fredag -->
+                <div class="video-slide" data-video="https://www.youtube.com/embed/feHf-khAmTM">
+                    <h2 class="slide-title">Fredag</h2>
+                    <div class="slide-media-wrapper">
+                        <div class="slide-image-wrapper">
+                            <img src="img/fredag.jpeg" alt="Fredag" class="slide-image">
+                            <button class="play-btn" aria-label="Afspil video for Fredag">
+                                <svg width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#fff" opacity="0.7"/><polygon points="20,16 36,24 20,32" fill="#573120"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="recipe-btn">se opskrift</button>
+                </div>
+                <!-- Lørdag -->
+                <div class="video-slide" data-video="https://www.youtube.com/embed/feHf-khAmTM">
+                    <h2 class="slide-title">Lørdag</h2>
+                    <div class="slide-media-wrapper">
+                        <div class="slide-image-wrapper">
+                            <img src="img/lørdag.jpeg" alt="Lørdag" class="slide-image">
+                            <button class="play-btn" aria-label="Afspil video for Lørdag">
+                                <svg width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#fff" opacity="0.7"/><polygon points="20,16 36,24 20,32" fill="#573120"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="recipe-btn">se opskrift</button>
+                </div>
+                <!-- Søndag -->
+                <div class="video-slide" data-video="https://www.youtube.com/embed/feHf-khAmTM">
+                    <h2 class="slide-title">Søndag</h2>
+                    <div class="slide-media-wrapper">
+                        <div class="slide-image-wrapper">
+                            <img src="img/søndag.jpeg" alt="Søndag" class="slide-image">
+                            <button class="play-btn" aria-label="Afspil video for Søndag">
+                                <svg width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#fff" opacity="0.7"/><polygon points="20,16 36,24 20,32" fill="#573120"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="recipe-btn">se opskrift</button>
+                </div>
+            </div>
+            <!-- Højre pil -->
+            <button class="slider-arrow right-arrow">&#8594;</button>
+        </div>
+    </section>
+
+
+    <!-- Modal til opskrift-billede (skjult som standard) -->
+    <div id="recipe-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img src="img/opskrift.png" alt="Opskrift" class="modal-image">
+        </div>
+    </div>
+
+        <!-- Footer / Bottom banner -->
+        <footer class="footer">
+            <div class="footer-content">
+                <!-- Ikoner lodret til venstre -->
+                <div class="footer-icons">
+                    <!-- Facebook ikon -->
+                    <img src="img/facebook.png" alt="Facebook" class="footer-icon">
+                    <!-- Instagram ikon -->
+                    <img src="img/instagram.png" alt="Instagram" class="footer-icon">
+                    <!-- Telefon ikon -->
+                    <img src="img/tlf.png" alt="Telefon" class="footer-icon">
+                </div>
+                <!-- Kontaktformular og tekst til højre -->
+                <div class="footer-form-section">
+                    <p class="footer-text">Skriv dig op til vores nyhedsbrev<br>og modtag et gratis ladbrugs kursus!</p>
+                    <form class="newsletter-form">
+                        <input type="text" id="name" name="name" placeholder="navn">
+                        <input type="email" id="email" name="email" placeholder="e-mail">
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+
+    <!--
+    JavaScript til at vise/skjule opskrift-modal når der trykkes på knappen.
+    Koden er meget simpel og kommenteret på dansk.
+    -->
+    <script>
+    // Find alle knapper der skal vise opskriften
+        // Find alle 'se opskrift'-knapper
+        const recipeBtns = document.querySelectorAll('.recipe-btn');
+        const modal = document.getElementById('recipe-modal');
+        const closeBtn = document.querySelector('.close-btn');
+
+        // Når en opskrift-knap trykkes, vis modal
+        recipeBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                modal.style.display = 'block';
+            });
+        });
+
+        // Når kryds trykkes, skjul modal
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        // Hvis man klikker udenfor modal-indholdet, skjul modal
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+    // --- Videoslider/karusel funktion ---
+    // Find alle slides og pile
+    const slides = document.querySelectorAll('.video-slide');
+    const leftArrow = document.querySelector('.left-arrow');
+    const rightArrow = document.querySelector('.right-arrow');
+    let currentSlide = 0; // Start med første slide
+
+    // Funktion til at vise slides
+    function showSlide(index) {
+        // Mobil: vis kun én slide
+        if (window.innerWidth < 700) {
+            slides.forEach((slide, i) => {
+                // Fjern video hvis den er åben
+                const mediaWrapper = slide.querySelector('.slide-media-wrapper');
+                const imageWrapper = slide.querySelector('.slide-image-wrapper');
+                const iframe = mediaWrapper.querySelector('iframe');
+                if (iframe) {
+                    iframe.remove();
+                    imageWrapper.style.display = 'flex';
+                }
+                slide.style.display = (i === index) ? 'block' : 'none';
+            });
+        } else {
+            // Desktop: vis 3 slides ad gangen
+            slides.forEach((slide, i) => {
+                const mediaWrapper = slide.querySelector('.slide-media-wrapper');
+                const imageWrapper = slide.querySelector('.slide-image-wrapper');
+                const iframe = mediaWrapper.querySelector('iframe');
+                if (iframe) {
+                    iframe.remove();
+                    imageWrapper.style.display = 'flex';
+                }
+                // Vis slides fra index til index+2
+                if (i >= index && i < index + 3) {
+                    slide.style.display = 'block';
+                } else {
+                    slide.style.display = 'none';
+                }
+            });
+        }
+    }
+
+    // Når venstre pil trykkes, gå til forrige slide
+    leftArrow.addEventListener('click', () => {
+        if (window.innerWidth < 700) {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        } else {
+            currentSlide = (currentSlide - 3 + slides.length) % slides.length;
+        }
+        showSlide(currentSlide);
+    });
+
+    // Når højre pil trykkes, gå til næste slide
+    rightArrow.addEventListener('click', () => {
+        if (window.innerWidth < 700) {
+            currentSlide = (currentSlide + 1) % slides.length;
+        } else {
+            currentSlide = (currentSlide + 3) % slides.length;
+        }
+        showSlide(currentSlide);
+    });
+
+    // Opdater slides ved resize
+    window.addEventListener('resize', () => {
+        showSlide(currentSlide);
+    });
+
+    // Funktion til at afspille videoen når play trykkes
+    slides.forEach((slide, i) => {
+        const playBtn = slide.querySelector('.play-btn');
+        playBtn.addEventListener('click', function() {
+            // Skjul billedet og indsæt videoen
+            const mediaWrapper = slide.querySelector('.slide-media-wrapper');
+            const imageWrapper = slide.querySelector('.slide-image-wrapper');
+            imageWrapper.style.display = 'none';
+            // Hent video-link fra data-video attribut
+            const videoUrl = slide.getAttribute('data-video');
+            // Opret iframe til videoen
+            const iframe = document.createElement('iframe');
+            iframe.width = '100%';
+            iframe.height = '340';
+            iframe.src = videoUrl;
+            iframe.title = 'YouTube video';
+            iframe.frameBorder = '0';
+            iframe.allowFullscreen = true;
+            // Indsæt iframe i mediaWrapper
+            mediaWrapper.appendChild(iframe);
+        });
+    });
+
+    // Vis første slide fra start
+    showSlide(currentSlide);
+    // --- Videoslider slut ---
+    </script>
+</body>
+</html>
